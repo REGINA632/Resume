@@ -1,0 +1,30 @@
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+.anim-btn {
+  transition-property: background-color !important;
+  transition-duration: 1s !important;
+  transition-delay: 0.5s !important;
+  transition-timing-function: ease-in-out !important;
+}
+.anim-btn:hover {
+  background-color: #000c40 !important;
+  color: white !important;
+}
+
+.anim {
+  background: linear-gradient(45deg, #f0f2f0, #000c40) !important;
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinity;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
